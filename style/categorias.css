@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.l-header, .l-main,  .l-footer {
+    max-width: 1250px;
+    padding: 0px 20px;
+    margin: 0 auto;
+}
+
+.l-header {
+    background: #ee461b url('../imagem/dragon_ball.jpg') no-repeat left center;
+    background-size: contain;
+    padding-bottom: 50px;
+}
+
+.l-header .nav-container .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0px;
+}
+
+.logo {
+    display: inline-block;
+    width: 2rem;
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+
+.nav li:not(.nav li:first-child, .nav li:nth-child(5)) {border-left: 1px solid gray;}
+
+.nav button {
+    outline: none;
+ 
+   border: none;
+    padding: 5px 15px 8px 0px;
+    color: white;
+    letter-spacing: 2px;
+    background-color: rgb(20, 20, 20);
+    cursor: pointer ;
+    transition: all 1s ease-out;
+}
+
+.nav button:hover {
+    transform: scale(1.01);
+    box-shadow: 3px 2px 10px rgb(20, 20, 20);
+} 
+
+.menu-toggle, .menu-toggle img {
+    display: none;
+    width: 30px;
+    border: none;
+}
+
+.title-header {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    max-width: 600px;
+    font-size: 1.3rem;
+    margin: 80px auto 0px auto;
+    color: white;
+    text-align: center;
+}
+
+.title-header h1::after {
+    content: '';
+    display: block;
+    width: 40%;
+    height: 2px;
+    background-color: grey;
+    border-radius: 15px;
+    margin: 30px auto;
+}
+
+.title-header input {
+    max-width: 350px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.title-header button {
+    outline: none;
+    border: none;
+    margin-top: 5px;
+    padding: 12px 33px;
+    color: white;
+    background-color: rgb(20, 20, 20);  
+}
+
+.featured-categories {
+    border-top: 1px solid gray;
+    padding: 30px 0px;
+    text-align: center;
+}
+
+.featured-categories h2 {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+}
+
+.featured-categories p {
+    max-width: 350px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+.featured-categories ul li {
+    margin-left: 10px;
+    margin-bottom: 60px;
+    max-width: 150px;
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.featured-categories ul li img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.other-product-image1 {
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+}
+
+.stars, .stars img {
+    width: 30px;
+}
+
+.other-product-image1 img {
+    object-fit: cover;
+    max-width: 100px;
+    width: 100%;
+}
+
+.newletter-email {
+    width: 60%;
+    position: relative;
+    left: 10%;
+    display: inline-block;
+    text-align: center;
+}
+
+.newletter-email h2 {
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 450;
+}
+
+.newletter-email input {
+    width: 60%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 18px;
+}
+
+.newletter-email button {
+    outline: none;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 18px;
+    padding: 12px 33px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(20, 20, 20, 0.555);
+    background-color: rgb(20, 20, 20);  
+}
+
+.header-regarding-product {
+    display: inline-block;
+    width: 50%;
+    padding: 30px 20px 0px 20px;
+    border-right: 1px solid gray;
+}
+
+.header-regarding-product h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding-bottom: 19px;
+}
+
+.header-regarding-product p {
+    font-size: 18px;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.header-regarding-product button {
+    outline: none;
+    border: none;
+    margin-top: 5px;
+    padding: 12px 33px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(20, 20, 20, 0.74);
+    background-color: rgb(20, 20, 20);
+}
+
+.wrapper {
+    display: flex;
+    border-top: 1px solid gray;
+}
+
+.wrapper ul { padding: 20px ; }
+
+.wrapper ul li {
+    display: flex;
+    margin-bottom: 15px;
+    gap: 10px;
+    list-style: none;
+}
+
+.wrapper ul li img {
+    width: 40%;
+}
+
+.l-footer {
+    background-color: #ee461b;
+    color: white;
+}
+
+.l-footer-container {
+    text-align: center;
+    padding: 20px 0px;
+    margin: 0 auto;
+    border-top: 1px solid gray;
+}   
+
+.l-footer ul li {
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.l-footer ul li a {
+    text-decoration: none;
+    padding: 5px 39px;
+    color: white;
+}
+
+.l-footer li:not(.l-footer li:first-child) { border-left: 1px solid gray; }
+
+.l-footer span {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: small;
+    font-style: italic;
+}
+
+@media (max-width: 736px) {
+
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-regarding-product {
+        display: block;
+        width: 100%;
+    }
+
+    .header-regarding-product button {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .newletter-email input {
+        width: 100%;
+    }
+
+    .wrapper ul {
+        display: inline-flex;
+    }
+
+}
+
+@media (max-width: 620px) {
+
+    .wrapper {
+        align-items: flex-end;
+    }
+
+    .wrapper ul {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 587px) {
+    .nav ul li:not(.nav ul li:last-child){
+        display: none;
+    }
+
+    .menu-toggle, .menu-toggle img {
+        display: inline-block;
+        width: 30px;
+        border: none;
+    }
+
+    .newletter-email {
+        width: 100%;
+        left: 0;
+        text-align: center;      
+    }
+
+    .newletter-email input {
+        width: 40%;
+    }
+
+    .other-product-image1 {
+        display: none;
+    }
+}
+
+@media (max-width:410px) {
+    .newletter-email input {
+        width: 100%;
+    }
+
+    .l-footer ul li {
+        display: block;
+        border: none;
+    }
+}
